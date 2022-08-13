@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Wendy Susanto</title>
+		<link rel="stylesheet" href="/css/style.css" />
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<nav id="home">
+				<div class="nav-item"><a href="#home">home</a></div>
+				<div class="nav-item dropdown">
+					<div>about</div>
+					<ul class="dropdown-item hide">
+						<li><a href="#portfolio">portfolio</a></li>
+						<li><a href="#contact">contact</a></li>
+					</ul>
+				</div>
+				<img
+					id="hamburger-button"
+					class="hide"
+					src="../assets/hamburger-button.svg"
+					alt="hamburger-button"
+				/>
+				<div class="nav-item-mobile hide">
+					<button id="close-navbar">x</button>
+					<ul>
+						<li><a href="#home">home</a></li>
+						<li><a href="#portfolio">portfolio</a></li>
+						<li><a href="#contact">contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section id="content">
+				<article class="jumbotron">
+					<div class="jumbotron-details">
+						<h2><span class="first-name">Wendy</span><span class="last-name">Susanto</span></h2>
+						<p>
+							I enjoy to code. A student who currently on 6th semester at Bina Nusantara University
+							majoring in Computer Science. Vastly ambitious to learn new things, and engrossed to
+							solve problems
+						</p>
+					</div>
+					<aside>
+						<img src="../assets/wendy-susanto.jpeg" alt="wendy-susanto" />
+					</aside>
+				</article>
+				<article id="portfolio" class="portfolio">
+					<div class="portfolio-title">
+						<h2>portfolio</h2>
+					</div>
+					<div class="portfolio-list">
+						<div class="portfolio-details">
+							<div>
+								<h3>Portfolio Website</h3>
+								<p>
+									Intended to showcase my portfolio, skills.<br />Tech Stack : HTML, SCSS, Vanilla
+									JavaScript <br />
+									<a href="https://wendy-susanto.web.app/" target="_blank">Click here</a>
+								</p>
+							</div>
+							<img src="../assets/portfolio-1.png" alt="portfolio-1" />
+						</div>
+						<div class="portfolio-details">
+							<div>
+								<h3>Order Food Application</h3>
+								<p>
+									Made for fun, only to hone my skill on using React.js.<br />The idea is from one
+									of the instructor in a online course<br />Tech Stack : React.js
+								</p>
+							</div>
+							<img src="../assets/portfolio-2.png" alt="portfolio-1" />
+						</div>
+					</div>
+				</article>
+			</section>
+		</main>
+		<footer>
+			<section id="contact" class="card">
+				<h2>I'm available for every opportunity!</h2>
+				<p>
+					Interested in working with me? Need help on your project? Or just wanna say hi? I’d love
+					to hear you about that.
+				</p>
+				<h5>Contact me on</h5>
+				<ul>
+					<a href="https://www.linkedin.com/in/wendy-susanto-29a5201a6/">
+						<li><i class="fab fa-linkedin"></i></li>
+					</a>
+					<a href="mailto:my.name.is.wendy.susanto@gmail.com">
+						<li><i class="fas fa-envelope"></i></li>
+					</a>
+					<a href="https://www.instagram.com/wendysusantoo/">
+						<li><i class="fab fa-instagram"></i></li>
+					</a>
+					<a href="https://github.com/WendySusanto">
+						<li><i class="fab fa-github"></i></li>
+					</a>
+				</ul>
+			</section>
+		</footer>
+		<script src="../js/index.js"></script>
+	</body>
+</html>

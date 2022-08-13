@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
+
+* {
+	font-family: 'Rubik', 'sans-serif';
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+::-moz-selection {
+	/* Code for Firefox */
+	color: white;
+	background: #2b2b2b;
+}
+
+::selection {
+	color: white;
+	background: #2b2b2b;
+}
+
+body {
+	background-color: black;
+	color: white;
+}
+
+header nav {
+	padding: 50px 30px;
+	display: flex;
+	justify-content: end;
+	margin-right: 30px;
+}
+
+header nav .nav-item {
+	padding: 10px 20px;
+	background-color: transparent;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	transition: 0.2s all;
+}
+
+header nav .nav-item:hover {
+	text-decoration: underline;
+	transition: 0.2s all;
+}
+
+header nav #hamburger-button {
+	width: 2%;
+}
+
+.hide {
+	display: none;
+}
+
+header nav .nav-item-mobile {
+	background-color: white;
+	min-height: 100vh;
+	width: 45%;
+	padding: 30px;
+	text-align: center;
+	border: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	border-radius: 30px 0px 0px 30px;
+}
+
+header nav .nav-item-mobile button {
+	border: 0;
+	background-color: transparent;
+	color: black;
+	font-size: 20px;
+	display: block;
+	margin-left: auto;
+	transition: 0.5s ease-in-out;
+}
+
+header nav .nav-item-mobile button:hover {
+	transform: rotate(360deg) scale(1.1);
+	transition: 0.5s ease-in-out;
+}
+
+header nav .nav-item-mobile ul li {
+	list-style: none;
+	padding: 20px 0px;
+}
+
+header nav .nav-item-mobile ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+header nav .nav-item > a {
+	text-decoration: none;
+	color: white;
+}
+
+header nav .nav-item.dropdown {
+	position: relative;
+}
+
+header nav .nav-item.dropdown:hover .dropdown-item {
+	display: block;
+}
+
+header nav .nav-item .dropdown-item {
+	position: absolute;
+	left: 0;
+	top: 40px;
+	padding-top: 10px;
+}
+
+header nav .nav-item ul li {
+	list-style: none;
+	padding: 10px 20px;
+	background-color: white;
+	color: black !important;
+}
+
+header nav .nav-item ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+header nav .nav-item ul li:hover {
+	background-color: lightgray;
+}
+
+main #content .jumbotron {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main #content .jumbotron .jumbotron-details {
+	max-width: 600px;
+	margin-right: 60px;
+}
+
+main #content .jumbotron .jumbotron-details .first-name {
+	padding: 10px;
+	color: white;
+	background-color: #2b2b2b;
+}
+
+main #content .jumbotron .jumbotron-details .last-name {
+	padding: 10px;
+	color: black;
+	background-color: white;
+}
+
+main #content .jumbotron .jumbotron-details p {
+	padding-top: 25px;
+	font-weight: 300;
+}
+
+main #content .jumbotron aside img {
+	width: 180px;
+	height: 180px;
+	object-fit: cover;
+	object-position: top;
+	border-radius: 50%;
+}
+
+article.portfolio::before {
+	content: '';
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	border-bottom: 4px solid white;
+}
+
+article.portfolio {
+	margin-top: 60px;
+}
+
+article.portfolio .portfolio-title {
+	margin: 30px 0px;
+	text-align: center;
+}
+
+article.portfolio .portfolio-list .portfolio-details {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 800px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+	padding-right: 25px;
+}
+
+article.portfolio .portfolio-list .portfolio-details p {
+	font-weight: 300;
+	line-height: 2;
+}
+
+article.portfolio .portfolio-list .portfolio-details p a {
+	color: white;
+	font-weight: 700;
+}
+
+article.portfolio .portfolio-list .portfolio-details img {
+	width: 50%;
+	border-radius: 25px;
+}
+
+footer .card {
+	border-radius: 25px;
+	width: 80%;
+	padding: 25px 50px;
+	margin: 0 auto;
+	margin-bottom: 60px;
+	margin-top: 80px;
+	background-color: #2b2b2b;
+}
+
+footer .card p {
+	padding: 15px 0px;
+	font-weight: 300;
+}
+
+footer .card ul {
+	display: flex;
+}
+
+footer .card ul li {
+	margin-top: 10px;
+	list-style: none;
+	margin-right: 15px;
+	color: white;
+}
+
+footer .card ul li:hover {
+	-webkit-filter: brightness(0.5);
+	filter: brightness(0.5);
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 920px) {
+	main #content .jumbotron .jumbotron-details {
+		max-width: 400px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	main #content .jumbotron .jumbotron-details {
+		max-width: 300px;
+	}
+
+	article.portfolio .portfolio-list .portfolio-details {
+		max-width: 600px;
+	}
+}
+
+@media screen and (max-width: 590px) {
+	main #content .jumbotron .jumbotron-details {
+		margin: 0 auto;
+	}
+
+	header nav #hamburger-button {
+		width: 6%;
+		display: block;
+	}
+
+	header nav .nav-item-mobile {
+		width: 100%;
+		border-radius: 30px 30px 30px 30px;
+	}
+
+	header nav .nav-item {
+		display: none;
+	}
+
+	main #content .jumbotron {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	main #content .jumbotron img {
+		margin-top: 50px;
+	}
+	article.portfolio .portfolio-list .portfolio-details {
+		flex-direction: column;
+	}
+
+	article.portfolio .portfolio-list .portfolio-details p,
+	article.portfolio .portfolio-list .portfolio-details h3 {
+		text-align: center;
+	}
+
+	article.portfolio .portfolio-list .portfolio-details img {
+		margin-top: 50px;
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	footer .card {
+		text-align: center;
+		margin-top: 50px;
+		padding: 20px;
+		line-height: 2;
+	}
+
+	footer .card ul {
+		justify-content: center;
+	}
+}
